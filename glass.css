@@ -1,10 +1,2 @@
 /* Background */
-.bg-glass {
-  background: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.3) 0%,
-    rgba(255, 255, 255, 0.3) 51.04%,
-    rgba(255, 255, 255, 0.3) 100%
-  ) !important;
-  backdrop-filter: blur(20px);
-}
+.bg-glass {background: linear-gradient(45deg,rgba(255, 255, 255, 0.3) 0%,rgba(255, 255, 255, 0.3) 51.04%,rgba(255, 255, 255, 0.3) 100%) !important;backdrop-filter: blur(20px);};
