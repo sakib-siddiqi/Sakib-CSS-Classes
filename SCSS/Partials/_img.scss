@@ -1,0 +1,6 @@
+@each $r1, $r2 in $ratio {
+  @include imgMixin(cover, $r1, $r2);
+}
+@each $r1, $r2 in $ratio {
+  @include imgMixin(contain, $r1, $r2);
+}

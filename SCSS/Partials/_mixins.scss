@@ -1,0 +1,32 @@
+.cover {
+  object-fit: cover;
+}
+.contain {
+  object-fit: contain;
+}
+/**
+Ratio mixin
+*/
+@mixin ratio($ratio) {
+  @each $r1, $r2 in $ratio {
+    .ratio-#{$r1}-#{$r2} {
+      aspect-ratio: $r1/$r2;
+    }
+  }
+}
+/**
+img Ratio mixin
+*/
+@mixin imgMixin($fit, $r1, $r2) {
+  @if $fit== "cover" {
+    .#{$fit}-#{$r1}-#{$r2} {
+      @extend .cover;
+      @extend .ratio-#{$r1}-#{$r2};
+    }
+  } @else if $fit== "contain" {
+    .#{$fit}-#{$r1}-#{$r2} {
+      @extend .contain;
+      @extend .ratio-#{$r1}-#{$r2};
+    }
+  }
+}
